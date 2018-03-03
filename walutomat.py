@@ -19,7 +19,7 @@ wanted_currency = sys.argv[3]
 # print(transaction_type, wanted_amount, wanted_currency)
 
 
-def rate_walutomat(transaction_type, currency):     #function finds exchange rate which will be first in an offer list
+def rate_walutomat(transaction_type, currency):     #finds exchange rate which will be first in an offer list
     if transaction_type == 'buy':
         currency_exchange = 'PLN_{}'.format(currency)
     else:
