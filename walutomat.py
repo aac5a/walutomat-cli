@@ -109,6 +109,6 @@ def exchange_walutomat(username, password, transaction_type, first_currency, sec
 rate = round(rate_walutomat(transaction_type, wanted_currency), 4)
 #rate = 3.41 # fixed rate for tests
 
-username = '' #input('Username: ')
-password = '' #input('Password: ')
+username = input('Username: ')
+password = input('Password: ')
 exchange_walutomat(username, password, transaction_type, wanted_currency, 'PLN', wanted_amount, rate)        #transaction type, 1st and 2nd currency aren't used now. TODO
